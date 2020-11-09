@@ -39,7 +39,7 @@
 
 * **Jangan ragu untuk menggunakan istilah teknis dalam penamaan**, Silakan gunakan istilah teknis. Misalnya, *jobQueue* lebih baik daripada *jobs*
   
-* **Gunakan kata kerja(*verb*) sebagai awalan dalam penulisan *method* dan gunakan kata benda(*noun*) untutk *Class***, Gunakan gaya penulisan *camelCase* untuk semua *variables* dan *methods*. Untuk penamaan *Class* harus diawali dengan kapital.
+* **Gunakan kata kerja(*verb*) sebagai awalan dalam penulisan *method* dan gunakan kata benda(*noun*) untuk *Class***, Gunakan gaya penulisan *camelCase* untuk semua *variables* dan *methods*. Untuk penamaan *Class* harus diawali dengan kapital.
   ```kotlin
   #1
   ✖ fun priceIncrement() {}
@@ -73,14 +73,15 @@
   #1
   Check to see if the employee is eligible for full benefits
   ✖ if (employee->flag && self::HOURLY_FLAGS && employee.age > 45) {}
-  ✔ 
+  ✔ if (employee->isEligibleForFullBenefits()) {}
   ```
   
-* **Gunakan Git/Subervesion untuk mengontrol riwayat *project*** *
+* **Gunakan Git/Subervesion untuk mengontrol riwayat *project***
 
-* **Hindari Array Jumbo** 
+* **Hindari Membuat Array Jumbo**, Hindari membuat array untuk kumpulan data yang besar, sebagai gantinya gunakan 
 
-* **Jangan mengulang code** *
+* **Jangan mengulang code**, Setiap kali menulis *method*, harus dicek lagi apakah sudah ada *function* yang serupa
 
-* **Don't Hardcode** *
+* **Don't Hardcode**, Tentukan konstanta atau gunakan variabel sebagai ganti hardcode nilai.
+ Menggunakan variabel tidak hanya akan membuatnya dapat dibaca tetapi juga akan membuatnya mudah untuk diubah jika digunakan di banyak tempat.
 
